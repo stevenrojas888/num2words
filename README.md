@@ -71,9 +71,9 @@ console.log(resultado);
 </script>
 
 🧩 Parámetros de la función
-num2words(numero, idioma?, sufijo?);
+num2words(numero, idioma?, sufijo?, mayusculas?);
 
-Parámetro  |  Tipo  | Opcional | Descripción
+Parámetro  |  Tipo  | Opcional | Descripción 
 numero     | number |    ❌    | Número a convertir. Puede ser un String de números.
 idioma     | string |    ✅    | Idioma de salida (por defecto: 'es')
 sufijo     | string |    ✅    | Texto adicional al final (ej: 'PESOS', 'DOLLARS')

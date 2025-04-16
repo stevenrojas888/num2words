@@ -29,6 +29,10 @@ num2words.js is a lightweight library that converts numbers (integers or decimal
 
 ## 🚀 Usage Examples
 
+🚀 Usage via CDN
+You can easily include num2words.js in your project by using the following CDN link:
+<script src="https://cdn.jsdelivr.net/gh/stevenrojas888/num2words@main/num2words.min.js"></script>
+
 ### 📌 Basic Usage
 
 ```javascript
@@ -112,6 +116,10 @@ num2words.js es una librería liviana que convierte números (enteros o decimale
 ---
 
 ## 🚀 Ejemplos de uso
+
+🚀 Uso a través de CDN
+Puedes incluir num2words.js fácilmente en tu proyecto utilizando el siguiente enlace CDN:
+<script src="https://cdn.jsdelivr.net/gh/stevenrojas888/num2words@main/num2words.min.js"></script>
 
 ### 📌 Uso básico
 

@@ -1,5 +1,89 @@
 # 🔢 num2words.js
 
+Convert numbers to words in multiple languages using JavaScript. Easy to use, customizable, and dependency-free.
+
+---
+
+## 📦 What is this?
+
+num2words.js is a lightweight library that converts numbers (integers or decimals) into words, supporting multiple languages. The library can handle numbers up to trillions and also allows you to add an optional suffix like "PESOS", "DOLLARS", "EUROS", etc.
+
+---
+
+## 🌍 Supported Languages
+
+- Spanish (`es`)
+- English (`en`)
+- French (`fr`)
+- German (`de`)
+- Portuguese (`pt`)
+- Italian (`it`)
+- Dutch (`nl`)
+- Danish (`da`)
+- Swedish (`sv`)
+- Chinese (`zh`)
+- Japanese (`ja`)
+- Korean (`ko`)
+
+---
+
+## 🚀 Usage Examples
+
+### 📌 Basic Usage
+
+```javascript
+let result = num2words('123456789.87');
+console.log(result); 
+// "one hundred twenty-three million four hundred fifty-six thousand seven hundred eighty-nine point eighty-seven"
+
+🌐 Specify language and suffix
+let result = num2words('123456.50', 'en', 'DOLLARS');
+console.log(result); 
+// "one hundred twenty-three thousand four hundred fifty-six and fifty cents DOLLARS"
+
+💻 Plain JavaScript Example
+<input type="text" id="amount" placeholder="Enter a number">
+<p id="result"></p>
+
+<script src="num2words.min.js"></script>
+<script>
+  document.getElementById('amount').addEventListener('change', function () {
+    let value = this.value;
+    let inWords = num2words(value, 'es', 'PESOS', 1); // 1 for uppercase
+    document.getElementById('result').textContent = inWords;
+  });
+</script>
+
+💡 jQuery Example
+<input type="text" id="amount">
+<button id="convert">Convert</button>
+<p id="output"></p>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="num2words.min.js"></script>
+<script>
+  $('#convert').on('click', function () {
+    let value = $('#amount').val();
+    let result = num2words(value, 'fr', 'EUROS', 0); // 0 for lowercase
+    $('#output').text(result);
+  });
+</script>
+
+🧩 Function Parameters num2words(number, language?, suffix?, uppercase?)
+Parameter |  Type  | Optional | Description
+number    | number |    ❌    | Number to convert. Can be a string of numbers.
+language  | string |    ✅    | Output language (default: 'es')
+suffix    | string |    ✅    | Additional text at the end (e.g., 'PESOS', 'DOLLARS')
+uppercase | number |    ✅    | 1 for uppercase, 0 for lowercase (default: 1)
+
+🤝 Contributions Would you like to help improve or translate this library? Fork, create a branch, and send a Pull Request!
+
+📜 License This project is licensed under the MIT License. See LICENSE for more details.
+
+===============================================================================================================
+
+# 🔢 num2words.js
+
 Convierte números a palabras en múltiples idiomas con JavaScript. Fácil de usar, personalizable y sin dependencias.
 
 ---
